@@ -1,0 +1,6 @@
+{
+  // Interpreter for Pylance/IntelliSense (kernels attached via the JupyterLab server don't tell Pylance which Python they use).
+  "python.defaultInterpreterPath": "${workspaceFolder}/.devenv/state/venv/bin/python",
+  // The notebooks add these to sys.path at runtime; tell Pylance so `import config` / `import train` resolve.
+  "python.analysis.extraPaths": ["walt/scripts", "pretraining"]
+}
